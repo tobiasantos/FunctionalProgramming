@@ -1,14 +1,14 @@
 module Tipos where
 
---Typeclasses:
+-- Typeclasses:
 -- Integral; Num; Fractional; Eq; Ord; Show; Read;
 
 -- Primitive Types:
 -- Char; Int; Integer; Float; Double; Bool
---
+
 -- Types:
 -- [Char]; (Int, Int); Int -> Int;
---
+
 --[]
 --(,)
 --(->)
