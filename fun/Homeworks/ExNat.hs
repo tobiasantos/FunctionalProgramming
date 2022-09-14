@@ -48,9 +48,13 @@ instance Ord Nat where
     -- Howevener, you should define them WITHOUT using (<=).
     -- Both are binary functions: max m n = ..., etc.
 
-    min = undefined
+    min Zero      _       = Zero
+    min _         Zero    = Zero
+    min (Succ m) (Succ n) = Succ (min m n)
 
-    max = undefined
+    max Zero     x        = x
+    max x        Zero     = x
+    max (Succ m) (Succ n) = Succ (max m n)
 
 isZero :: Nat -> Bool
 isZero Zero = True
